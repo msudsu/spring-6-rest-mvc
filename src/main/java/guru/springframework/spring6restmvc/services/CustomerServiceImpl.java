@@ -20,7 +20,7 @@ public class CustomerServiceImpl implements CustomerService {
                 .version(1)
                 .customerName("Sergio Brown")
                 .createdDate(LocalDateTime.now())
-                .lastModifiedDateDate(LocalDateTime.now())
+                .lastModifiedDate(LocalDateTime.now())
                 .build();
 
         Customer customer2 = Customer.builder()
@@ -28,7 +28,7 @@ public class CustomerServiceImpl implements CustomerService {
                 .version(1)
                 .customerName("Anna Black")
                 .createdDate(LocalDateTime.now())
-                .lastModifiedDateDate(LocalDateTime.now())
+                .lastModifiedDate(LocalDateTime.now())
                 .build();
 
         Customer customer3 = Customer.builder()
@@ -36,7 +36,7 @@ public class CustomerServiceImpl implements CustomerService {
                 .version(1)
                 .customerName("Maxim Green")
                 .createdDate(LocalDateTime.now())
-                .lastModifiedDateDate(LocalDateTime.now())
+                .lastModifiedDate(LocalDateTime.now())
                 .build();
 
         customerMap.put(customer1.getId(), customer1);
@@ -61,7 +61,7 @@ public class CustomerServiceImpl implements CustomerService {
         Customer savedCustomer = Customer.builder()
                 .id(UUID.randomUUID())
                 .createdDate(LocalDateTime.now())
-                .lastModifiedDateDate(LocalDateTime.now())
+                .lastModifiedDate(LocalDateTime.now())
                 .customerName(customer.getCustomerName())
                 .version(customer.getVersion())
                 .build();
